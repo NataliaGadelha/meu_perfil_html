@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Projeto Portfólio">
+	<meta name="author" content="Natália Gadelha">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+	<title>Meu Perfil</title>
+</head>
+
+<body>
+	<!-- Cabeçalho da Página (header) -->
+	<header>
+
+		<!-- Div Conteudo do Cabeçalho -->
+		<div id="header_content">
+
+			<!-- Titulo do Cabeçalho -->
+			<div id="titulo">
+
+				<!-- Seu nome -->
+				<h1>Natália Gadelha</h1>
+
+			</div>
+
+			<!-- Conteudo do Menu da Página (header) -->
+			<div id="menu">
+
+				<!-- Menu da Página -->
+				<nav>
+
+					<!-- Marcadores não ordenados + links -->
+					<ul id="menu">
+						<li>
+							<a href="index.html"> Home </a>
+						</li>
+						<li>
+							<a href="contato.html"> Contato </a>
+						</li>
+					</ul>
+
+				</nav>
+
+			</div>
+
+		</div>
+		</div>
+	</header>
+
+	<!-- Seção Principal da Página (main) -->
+	<main>
+
+		<!-- Seção Sobre você -->
+		<section id="about">
+
+			<!-- Título da Seção -->
+			<h2>Sobre Natália Gadelha</h2>
+
+			<!-- Conteúdo da Seção -->
+			<div id="conteudo">
+
+				<!-- Imagem do criador do conteúdo -->
+				<img src="./assets/img/user_02.svg   " alt="Foto do criador desse conteudo" />
+
+				<!-- Texto sobre o criador do conteúdo -->
+				<article id="sobre_texto">
+					<p>
+						Olá, me chamo Natália! Encontrei na tecnologia uma nova direção profissional e pessoal. Após
+						anos trabalhando com
+						atendimento ao público e rotinas administrativas, descobri na programação uma nova paixão e
+						propósito. Desde então, venho construindo uma carreira com foco em Desenvolvimento Full Stack,
+						unindo aprendizado técnico com uma forte capacidade de resolução de problemas e comunicação.
+					</p>
+					<p>
+						Sou formada em Análise e Desenvolvimento de Sistemas pelo IFSP e atualmente curso o Bootcamp
+						Full Stack JavaScript pela Generation Brasil. Durante essa trajetória, desenvolvi uma base
+						sólida em lógica de programação, orientação a objetos e desenvolvimento web, com domínio de
+						tecnologias como JavaScript, TypeScript, Node.js, React, NestJS e MySQL.
+					</p>
+				</article>
+			</div>
+
+		</section>
+
+		<!-- Seção contendo um vídeo de sua preferência -->
+		<section id="video">
+
+			<!-- Título da Seção -->
+			<h2>Meu vídeo favorito:</h2>
+
+			<!-- Vídeo da Seção -->
+			<div class="youtube">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/i93Z7zljQ7I?si=mSZVSz8vv-VMRfsF"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+
+		</section>
+
+	</main>
+
+	<!-- Rodapé da Página (footer) -->
+	<footer>
+
+		<!-- Seção Formulário de Contato e Redes Sociais -->
+		<section id="contact">
+
+			<!-- Seção do Formulário-->
+			<form action="#" method="submit" id="formulario">
+				<label for="nome">Nome: </label>
+				<input id="name" type="text" name="name" placeholder="Digite seu nome" required />
+				<span id="txtNome"></span>
+
+				<label for="email">Email: </label>
+				<input id="email" type="email" name="email" placeholder="Digite seu email" required />
+				<span id="txtEmail"></span>
+
+				<label for="subject">Assunto: </label>
+				<input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
+				<span id="txtSubject"></span>
+
+				<label for="message">Mensagem: </label>
+				<textarea id="message" name="message" placeholder="Digite sua mensagem" required>
+					</textarea>
+
+				<button type="submit">Enviar</button>
+			</form>
+
+			<!-- Seção do Google Maps -->
+			<article id="mapa">
+
+			</article>
+		</section>
+		</main>
+
+		<!-- Seção de Contato - Redes Sociais-->
+		<section id="redes_sociais">
+
+			<a href="https://www.linkedin.com/in/natalia-gadelha/">
+				<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+			</a>
+			<a href="https://github.com/NataliaGadelha">
+				<img src="assets/img/github.svg" alt="Github" />
+			</a>
+			<a href="">
+				<img src="assets/img/instagram.svg" alt="Instagram" />
+			</a>
+
+		</section>
+
+		<h3>
+			Feito com 🧡 por Natália Gadelha - 2025
+		</h3>
+
+	</footer>
+
+</body>
+
+</html>
