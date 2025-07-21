@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
@@ -9,43 +18,56 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
 
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">   
+
     <title>Meu Perfil</title>
 </head>
 
 <body>
-    <!-- Cabeçalho da Página (header) -->
-    <header>
-        <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
-            <!-- Titulo do Cabeçalho -->
-            <div id="titulo">
-                <!-- Seu nome -->
-                <h1>Natália Gadelha</h1>
-            </div>
+    	<!-- Cabeçalho da Página (header) -->
+		<header>
 
-            <!-- Conteudo do Menu da Página (header) -->
-            <div id="menu">
-                <!-- Menu da Página -->
-                <nav>
-                    <!-- Marcadores não ordenados + links -->
-                    <ul id="menu">
-                        <li>
-                            <a href="index.html"> Home </a>
-                        </li>
-                        <li>
-                            <a href="contato.html"> Contato </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content" class="flex">
+
+				<!-- Titulo do Cabeçalho -->
+				<div id="titulo">
+
+					<!-- Seu nome -->
+					<h1>Natália Gadelha</h1>
+
+				</div>
+
+				<!-- Conteudo do Menu da Página (header) -->
+				<div id="menu">
+
+					<!-- Menu da Página -->
+					<nav>
+
+						<!-- Marcadores não ordenados + links -->
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+						</ul>
+
+					</nav>
+
+				</div>
+
+			</div>
+
+		</header>
 
     <!-- Seção Principal da Página (main) -->
     <main>
 
         <!-- Seção Formulário de Contato e Redes Sociais -->
-        <section id="contact">
+        <div id="contact" class="flex">
 
             <!-- Seção do Formulário-->
             <form action="#" method="submit" id="formulario">
@@ -69,36 +91,45 @@
             </form>
 
             <!-- Seção do Google Maps -->
-            <article id="mapa">
+			<section id="mapa" class="flex_start">
 
-                <p>Est. Caneleiras, 808</p>
-                <p>Itapecerica da Serra - SP</p>
+                <div id="endereco">
 
+                    <p>Est. Caneleiras, 808</p>
+                    <p>Itapecerica da Serra - SP</p>
+
+                </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.407839502719!2d-46.8012185!3d-23.6971256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce52ec24f6b17d%3A0xe0b0c88447f4195a!2sEstr.%20Caneleiras%2C%20808%20-%20A%20Definir%2C%20Itapecerica%20da%20Serra%20-%20SP%2C%2006856-870!5e0!3m2!1spt-BR!2sbr!4v1752776813846!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    width="400"
+					height="250" 
+                    frameborder="0"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
 
-            </article>
+            </section>
 
-        </section>
+        </div>
 
     </main>
 
     <!-- Rodapé da Página (footer) -->
-    <footer>
+    <footer class="flex">
 
         <!-- Seção de Contato - Redes Sociais -->
         <section id="redes_sociais">
 
             <a href="https://www.linkedin.com/in/natalia-gadelha/">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
             </a>
             <a href="https://github.com/NataliaGadelha">
-                <img src="assets/img/github.svg" alt="Github" />
+                <img src="assets/img/github.svg" alt="Github" class="social_icon"/>
             </a>
             <a href="https://discord.com/users/1049519666248298586">
-                <img src="assets/img/discord-outline-svgrepo-com.svg" alt="Discord" />
+                <img src="assets/img/discord-outline-svgrepo-com.svg" alt="Discord" class="social_icon"/>
             </a>
 
         </section>
