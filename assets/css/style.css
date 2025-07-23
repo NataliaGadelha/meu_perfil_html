@@ -28,7 +28,6 @@
 
 }
 
-
 html {
     width: 100%;
     height: 100vh;
@@ -110,13 +109,13 @@ p{
     text-decoration: underline;
  }
  
- /* Estilização da Seção About */
+/* Estilização da Seção About */
 
- #about{
+#about{
     flex-direction: column;
     margin: 2rem auto;
     width: 90%;
- }
+}
 
 #conteudo{
     flex-direction: row;
@@ -134,7 +133,16 @@ p{
     flex-direction: column;
     margin: 2rem auto;
     width: 90%;
+    border: none;
+    border-radius: 16px;
  }
+
+#video iframe { 
+    border: none;
+    border-radius: 15px; 
+    overflow: hidden;
+    box-sizing: border-box;
+}
 
 /* Estilização da Seção Footer */
 
@@ -179,12 +187,12 @@ footer{
             contrast(88%);
 }
 
- /*Estilização da Página de Contato*/
+/*Estilização da Página de Contato*/
  
- #contact{
+#contact{
     flex-direction: row;
     gap: 2rem;
- }
+}
 
 form {
     display: flex;
@@ -243,6 +251,7 @@ form button:hover {
 
 /* Estilização do Mapa */
 #mapa{
+    width: 100%;
     width: 480px;
     flex-direction: column;
     gap: 3rem;
@@ -252,6 +261,8 @@ form button:hover {
     font-size: 1rem;
     text-align: justify;
     font-weight: 600;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Estilização do Alert */
@@ -278,4 +289,106 @@ form button:hover {
 @keyframes fadeout {
   from {opacity: 1;}
   to {opacity: 0;}
+}
+
+/* Media queries para tornar o site responsivo */
+
+/* Telas menores que 1024px (tablets e menores) */
+@media (max-width: 1024px) {
+  #contact, #conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form, #mapa {
+    width: 90%;
+  }
+
+  #redes_sociais {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+
+/* Telas menores que 768px (celulares grandes) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .img_profile {
+    width: 150px;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  #header_content {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  #menu li {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  #menu li a {
+    font-size: 18px;
+  }
+}
+
+/* Telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .social_icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  form input, textarea {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+.mapa {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+.mapa-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 15px; 
+  overflow: hidden;
 }
