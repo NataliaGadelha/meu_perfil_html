@@ -8,13 +8,6 @@
     font-family: "Quantico", sans-serif;
 }
 
-.vt323-regular {
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 :root {
     --russian-violet: #a69abd;
     --thistle: #DDBDD5;
@@ -259,4 +252,30 @@ form button:hover {
     font-size: 1rem;
     text-align: justify;
     font-weight: 600;
+}
+
+/* Estilização do Alert */
+
+.alert-sucesso {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
